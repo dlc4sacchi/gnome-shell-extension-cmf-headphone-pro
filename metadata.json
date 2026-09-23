@@ -1,0 +1,7 @@
+{
+  "uuid": "cmf-headphone-pro@dlc4sacchi.github.io",
+  "name": "CMF Headphone Pro Controls",
+  "description": "Control CMF Headphone Pro noise, sound, and device settings from GNOME Quick Settings.",
+  "shell-version": ["50"],
+  "url": "https://github.com/dlc4sacchi/gnome-shell-extension-cmf-headphone-pro"
+}
