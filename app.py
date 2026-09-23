@@ -731,6 +731,8 @@ class ControlsWindow(Adw.ApplicationWindow):
             if key in {"lag", "find"}:
                 row = Adw.ActionRow(title=title)
                 switch = Gtk.Switch(valign=Gtk.Align.CENTER)
+                # Match the space reserved for ExpanderRow's disclosure arrow.
+                switch.set_margin_end(25)
                 switch.set_active(self._quick_config["items"][key]["enabled"])
                 switch.connect("notify::active", lambda widget, _prop, item=key:
                                self._menu_item_toggled(item, widget.get_active()))
