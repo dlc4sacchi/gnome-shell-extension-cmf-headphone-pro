@@ -457,7 +457,7 @@ class ControlsWindow(Adw.ApplicationWindow):
         box.set_halign(Gtk.Align.FILL)
 
         picture = Gtk.Picture.new_for_filename(
-            str(HERE / "headphones.svg")
+            str(HERE / "headphones.png")
         )
         self._hero_image = picture
         picture.set_content_fit(Gtk.ContentFit.CONTAIN)

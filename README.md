@@ -19,8 +19,16 @@ Physical button and roller noise-cycle choices use the headset's supported
 three-mode and two-mode combinations.
 
 The extension UUID is `cmf-headphone-pro@dlc4sacchi.github.io`. The extension
-is independent of CMF and Nothing. The included headphone illustration is an
-original, generic SVG.
+is independent of CMF and Nothing. The headphone image is the light-grey
+product render from the [official CMF storefront](https://cdn.shopify.com/s/files/1/0580/5214/9415/files/CMF_Headphone1-light-grey.png?v=1758800639).
+
+## Screenshots
+
+| Noise control | Sound |
+| --- | --- |
+| ![Noise controls](screenshots/noise.png) | ![Sound controls](screenshots/sound.png) |
+| Physical controls | Extension settings |
+| ![Physical controls](screenshots/controls.png) | ![Extension settings](screenshots/extension.png) |
 
 ## Install from source
 
@@ -30,7 +38,7 @@ through GNOME Bluetooth. From the repository root, build the bundle with:
 ```sh
 gnome-extensions pack . \
   --extra-source=app.py --extra-source=controller.py \
-  --extra-source=config.py --extra-source=headphones.svg \
+  --extra-source=config.py --extra-source=headphones.png \
   --extra-source=LICENSE --extra-source=README.md
 ```
 
