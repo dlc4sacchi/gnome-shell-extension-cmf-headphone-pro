@@ -31,7 +31,19 @@ product render from the [official CMF storefront](https://cdn.shopify.com/s/file
 | Physical controls | Extension settings |
 | ![Physical controls](screenshots/controls.jpg) | ![Extension settings](screenshots/extension.jpg) |
 
-## Install from source
+## Install
+
+To install or update to the latest GitHub release with one command:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/dlc4sacchi/gnome-shell-extension-cmf-headphone-pro/main/install.sh | bash
+```
+
+The installer downloads the latest release ZIP, checks its extension UUID and
+GNOME Shell compatibility, installs it, and enables it for the next login.
+Log out and back in after running it.
+
+### Build manually
 
 Install Python 3, PyGObject, GTK 4, libadwaita, and BlueZ. Pair the headphones
 through GNOME Bluetooth. From the repository root, build the bundle with:
